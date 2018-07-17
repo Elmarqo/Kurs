@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="odc22.MainController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="588.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="main" text="Main Window">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="mainButton" layoutX="77.0" layoutY="251.0" mnemonicParsing="false" onAction="#giveInfo" text="Button" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tab1" text="Tab 1">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <fx:include source="Tab1Screen.fxml" fx:id="tab1CTRL"/>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+            <Tab fx:id="tab2" text="Tab 2">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <fx:include source="Tab2Screen.fxml" fx:id="tab2CTRL"/>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
